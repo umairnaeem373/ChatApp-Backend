@@ -8,7 +8,7 @@ module.exports = async () => {
 
     await mongoose.connect(dbUrl);
 
-    console.log("Connected to MongoDB successfully".bold.bgGreen.white);
+    console.log("Connected to MongoDB successfully...".bold.bgGreen.white);
   } catch {
     (error) => {
       console.error("Error connecting to MongoDB:", error);
