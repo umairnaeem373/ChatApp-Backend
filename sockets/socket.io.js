@@ -14,7 +14,7 @@ function initSocket(server) {
 
     console.log("Socket.IO initialized".blue.inverse);
 
-    // 🔥 Setup listeners
+
     ioInstance.on("connection", (socket) => {
       console.log("User connected:", socket.id);
 
