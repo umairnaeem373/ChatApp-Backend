@@ -18,7 +18,7 @@ function initSocket(server) {
     ioInstance.on("connection", (socket) => {
       console.log("User connected:", socket.id);
 
-      // 🎯 Listen for incoming messages
+      
       socket.on("sendMessage", async ({ senderId, receiverId, text }) => {
         const message = await new Message({ senderId, receiverId, text }).save();
 
