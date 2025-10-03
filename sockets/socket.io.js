@@ -12,7 +12,7 @@ function initSocket(server) {
       }
     });
 
-    console.log("Socket.IO initialized".blue.inverse);
+    console.log("Socket.IO Initialized".blue.inverse);
 
 
     ioInstance.on("connection", (socket) => {
